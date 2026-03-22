@@ -1,0 +1,17 @@
+{
+  "applications": [
+    {
+      "id": 1,
+      "company": "OpenAI",
+      "role": "Software Engineer Intern",
+      "status": "Applied",
+      "location": "Remote",
+      "dateApplied": "2026-03-01",
+      "deadline": "2026-04-01",
+      "notes": "Follow up after 2 weeks",
+      "resumeText": "Built a full stack job tracker with React and Node.js.",
+      "coverLetterText": "I am excited to apply for...",
+      "createdAt": "2026-03-01T10:00:00.000Z"
+    }
+  ]
+}

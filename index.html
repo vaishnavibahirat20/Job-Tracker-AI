@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Job Application Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">End-to-end portfolio project</p>
+        <h1>AI Job Application Tracker</h1>
+        <p class="subtitle">Track applications, score resumes, and manage follow-ups in one place.</p>
+      </div>
+      <div class="stats" id="stats"></div>
+    </header>
+
+    <section class="grid">
+      <div class="card form-card">
+        <h2>Add application</h2>
+        <form id="appForm">
+          <div class="row">
+            <input name="company" placeholder="Company" required />
+            <input name="role" placeholder="Role" required />
+          </div>
+          <div class="row">
+            <select name="status">
+              <option>Applied</option>
+              <option>Interview</option>
+              <option>Offer</option>
+              <option>Rejected</option>
+            </select>
+            <input name="location" placeholder="Location" />
+          </div>
+          <div class="row">
+            <input type="date" name="dateApplied" />
+            <input type="date" name="deadline" />
+          </div>
+          <textarea name="notes" rows="3" placeholder="Notes"></textarea>
+          <textarea name="resumeText" rows="4" placeholder="Paste resume text for AI review"></textarea>
+          <textarea name="coverLetterText" rows="4" placeholder="Paste cover letter text"></textarea>
+          <button type="submit">Save application</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <div class="section-head">
+          <h2>AI review</h2>
+          <button id="reviewBtn" type="button">Generate review</button>
+        </div>
+        <pre id="reviewBox" class="review-box">Select an application or generate a review after adding one.</pre>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-head">
+        <h2>Your applications</h2>
+        <input id="search" placeholder="Search company or role" />
+      </div>
+      <div id="list" class="list"></div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
